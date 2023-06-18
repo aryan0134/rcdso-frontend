@@ -1,5 +1,5 @@
 {
-  "proxy": "https://rcdso-backend.onrender.com/",
+  "proxy": "https://rcdso-backend.onrender.com:4000",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
