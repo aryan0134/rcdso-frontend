@@ -21,7 +21,7 @@ function PracticeDetails({current}) {
         return
         }
 
-        const response = await fetch('/api/practices/' + current._id , {
+        const response = await fetch('https://rcdso-backend.onrender.com/api/practices/' + current._id , {
         method: 'DELETE',
         headers:{'Authorization': `Bearer ${user.token}`}
         })
