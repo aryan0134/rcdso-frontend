@@ -25,7 +25,7 @@ function CreateBlogs() {
 
         const blog = {title,content,postedBy}
 
-        const response = await fetch('/api/blogs/', {
+        const response = await fetch('https://rcdso-backend.onrender.com/api/blogs/', {
             method: 'POST',
             body: JSON.stringify(blog),
             headers: {
