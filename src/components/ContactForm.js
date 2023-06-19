@@ -33,7 +33,7 @@ function ContactForm() {
 
         const ans= {name, email, phone, time, message}
 
-        const response = await fetch('/api/messages/', {
+        const response = await fetch('https://rcdso-backend.onrender.com/api/messages/', {
             method: 'POST',
             body: JSON.stringify(ans),
             headers: {
