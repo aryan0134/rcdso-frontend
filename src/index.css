@@ -278,7 +278,7 @@ nav button {
 }
 .picfix{
   position: fixed;
-  height: 5%;
+  height: 6%;
   width: 10%;
   transform: rotate(270deg);
   right: -2.5%;
