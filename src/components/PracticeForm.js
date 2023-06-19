@@ -30,7 +30,7 @@ function PracticeForm() {
 
         const practice = {name, location, address, email, website, price, production, phoneNo, description}
 
-        const response = await fetch('/api/practices/', {
+        const response = await fetch('https://rcdso-backend.onrender.com/api/practices/', {
             method: 'POST',
             body: JSON.stringify(practice),
             headers: {
