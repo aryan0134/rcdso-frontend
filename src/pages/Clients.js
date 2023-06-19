@@ -42,7 +42,7 @@ function Clients() {
 
   useEffect(() => {
     const fetchClients = async () => {
-    const response = await fetch('/api/allclients')
+    const response = await fetch('https://rcdso-backend.onrender.com/api/allclients')
     const json = await response.json()
 
     if(response.ok){
