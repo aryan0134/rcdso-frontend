@@ -558,6 +558,11 @@ nav button {
   background-color: #5a5255;
   margin-top: 2%;
   position: relative;
+  display: flex;
+}
+#start4 h1{
+  font-size: 1.5vw;
+  font-weight: lighter;
 }
 #start4 img{
   transform: rotate(270deg);
@@ -574,6 +579,10 @@ nav button {
   /* border: 1px solid white; */
   align-items: center;
   width: 45%;
+  position: absolute;
+  left: 0;
+  top: 2%;
+  margin: auto;
 }
 .bullet1 span{
   font-size: 2vw;
