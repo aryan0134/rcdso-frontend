@@ -33,7 +33,7 @@ function ClientsForm() {
 
         const clients = {firstName, lastName, role, dob, postedBy, profilePic, description}
 
-        const response = await fetch('/api/clients', {
+        const response = await fetch('https://rcdso-backend.onrender.com/api/clients', {
             method: 'POST',
             body: JSON.stringify(clients),
             headers: {
