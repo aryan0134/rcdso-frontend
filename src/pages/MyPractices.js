@@ -12,7 +12,7 @@ function MyPractices() {
 
     useEffect(() => {
         const fetchPractices = async () => {
-        const response = await fetch('/api/practices' , {
+        const response = await fetch('https://rcdso-backend.onrender.com/api/practices' , {
             headers: {'Authorization': `Bearer ${user.token}`}
         })
         const json = await response.json()
