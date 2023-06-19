@@ -16,7 +16,7 @@ function MyBlogs() {
 
     useEffect(() => {
         const fetchBlogs = async () => {
-        const response = await fetch('/api/blogs' , {
+        const response = await fetch('https://rcdso-backend.onrender.com/api/blogs' , {
             headers: {'Authorization': `Bearer ${user.token}`}
         })
         const json = await response.json()
@@ -38,7 +38,7 @@ function MyBlogs() {
         return
         }
 
-        const response = await fetch('/api/blogs/' + current._id , {
+        const response = await fetch('https://rcdso-backend.onrender.com/api/blogs/' + current._id , {
         method: 'DELETE',
         headers:{'Authorization': `Bearer ${user.token}`}
         })
