@@ -22,7 +22,7 @@ function ClientsDetails({current}) {
         return
         }
 
-        const response = await fetch('/api/clients/' + current._id , {
+        const response = await fetch('https://rcdso-backend.onrender.com/api/clients/' + current._id , {
         method: 'DELETE',
         headers:{'Authorization': `Bearer ${user.token}`}
         })
