@@ -12,7 +12,7 @@ export const useUpdate = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch(`/api/user/${user.user._id}`, {
+        const response = await fetch(`https://rcdso-backend.onrender.com/api/user/${user.user._id}`, {
             method: 'PATCH',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({firstName,lastName,profilePic,email, password})
