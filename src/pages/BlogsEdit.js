@@ -16,7 +16,7 @@ function BlogsEdit() {
 
     useEffect(() => {
         const fetchBlogs = async () => {
-        const response = await fetch(`/api/blogs/${id}` , {
+        const response = await fetch(`https://rcdso-backend.onrender.com/api/blogs/${id}` , {
             headers: {'Authorization': `Bearer ${user.token}`}
         })
   
@@ -51,7 +51,7 @@ function BlogsEdit() {
 
         const blogs = {title,content}
 
-        const response = await fetch(`/api/blogs/${id}`, {
+        const response = await fetch(`https://rcdso-backend.onrender.com/api/blogs/${id}`, {
             method: 'PATCH',
             body: JSON.stringify(blogs),
             headers: {
