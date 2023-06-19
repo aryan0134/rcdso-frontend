@@ -16,7 +16,7 @@ function BlogPostItems({ postId,current }) {
 
   
   const fetchComments = async () => {
-    await axios.get(`/api/comments/${postId}`)
+    await axios.get(`https://rcdso-backend.onrender.com/api/comments/${postId}`)
       .then((response) => {
         setComments(response.data);
       })
@@ -26,7 +26,7 @@ function BlogPostItems({ postId,current }) {
   };
 
   const addComment = (text, author) => {
-    axios.post('/api/comments', { text, author, post: postId})
+    axios.post('https://rcdso-backend.onrender.com/api/comments', { text, author, post: postId})
       .then((response) => {
         setComments([...comments, response.data]);
       })
