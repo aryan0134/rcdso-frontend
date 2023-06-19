@@ -2188,6 +2188,7 @@ input.error {
 /* Footer */
 .footer p{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top:2px;
 }
 .footer{
   background-color: #F5F5F4;
