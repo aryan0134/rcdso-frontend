@@ -5,7 +5,7 @@ import complaint from './complaint.png'
 import arrow from './arrow.png'
 import advice from './advice.png'
 import { BsCircle } from 'react-icons/bs'
-import contactus from './contactus.png'
+import contactus from './Contact-us.gif'
 import { Link } from 'react-router-dom'
 import Footer from "../components/Footer"
 
