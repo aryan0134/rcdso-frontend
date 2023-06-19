@@ -50,7 +50,7 @@ const drop = (id)=>{
   return (
     <div className='salepractice-main'>
       <div className='itsheading'>
-        <div className='itsheading-text'><h1>These are all the practices that are being sold, to sell your own practice click on the button on right side</h1></div>
+        <div className='itsheading-text'><h1>LIST YOUR DENTAL PRACTICE FOR FREE:</h1></div>
         <div className='head-btn' onClick={handleClick}><h1>My Practices</h1></div>
       </div>
       <div className='practice-table'>
