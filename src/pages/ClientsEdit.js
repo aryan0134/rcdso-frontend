@@ -23,7 +23,7 @@ function ClientsEdit() {
 
     useEffect(() => {
       const fetchClients = async () => {
-      const response = await fetch(`/api/clients/${id}` , {
+      const response = await fetch(`https://rcdso-backend.onrender.com/api/clients/${id}` , {
           headers: {'Authorization': `Bearer ${user.token}`}
       })
 
@@ -63,7 +63,7 @@ const handleSubmit = async (e) => {
 
     const clients = {firstName, lastName, role, dob, profilePic, description}
 
-    const response = await fetch(`/api/clients/${id}`, {
+    const response = await fetch(`https://rcdso-backend.onrender.com/api/clients/${id}`, {
         method: 'PATCH',
         body: JSON.stringify(clients),
         headers: {
