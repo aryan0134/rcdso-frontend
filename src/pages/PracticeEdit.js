@@ -33,7 +33,7 @@ function PracticeEdit() {
 
     useEffect(() => {
         const fetchPractices = async () => {
-        const response = await fetch(`/api/practices/${id}` , {
+        const response = await fetch(`https://rcdso-backend.onrender.com/api/practices/${id}` , {
             headers: {'Authorization': `Bearer ${user.token}`}
         })
         const json = await response.json()
@@ -86,7 +86,7 @@ function PracticeEdit() {
 
         const practice = {name, location, address, email, website, price, production, phoneNo, description}
 
-        const response = await fetch(`/api/practices/${id}`, {
+        const response = await fetch(`https://rcdso-backend.onrender.com/api/practices/${id}`, {
             method: 'PATCH',
             body: JSON.stringify(practice),
             headers: {
