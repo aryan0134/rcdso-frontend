@@ -12,7 +12,7 @@ function MyPosts() {
 
     useEffect(() => {
         const fetchClients = async () => {
-        const response = await fetch('/api/clients' , {
+        const response = await fetch('https://rcdso-backend.onrender.com/api/clients' , {
             headers: {'Authorization': `Bearer ${user.token}`}
         })
         const json = await response.json()
