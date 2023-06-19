@@ -71,7 +71,7 @@ function Clients() {
   return (
     <div className='salepractice-main clients-main'>
       <div className='itsheading clients-heading'>
-        <div className='itsheading-text its-heading-text2'><h1>These are all the practices that are being sold, to sell your own practice click on the button on right side</h1></div>
+        <div className='itsheading-text its-heading-text2'><h1>Search your employee or Patients before hiring or accepting them:</h1></div>
         <div className='head-btn head-btn2' onClick={handleClick}><h1>My Posts</h1></div>
       </div>
       <div className='clients-main-container'>
