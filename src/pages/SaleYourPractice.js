@@ -14,7 +14,7 @@ function SaleYourPractice() {
 
   useEffect(() => {
     const fetchPractices = async () => {
-    const response = await fetch('/api/allpractices')
+    const response = await fetch('https://rcdso-backend.onrender.com/api/allpractices')
     const json = await response.json()
 
     if(response.ok){
