@@ -1010,6 +1010,9 @@ form.signup{
   cursor: pointer;
   margin-bottom: 0px;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .upload-btn{
   margin-bottom: 10px !important;
@@ -1235,6 +1238,8 @@ input.error {
 }
 .my-practice-form{
   height: 160vh;
+  display: flex;
+  flex-direction: column;
 }
 .create h3{
   color: silver;
@@ -1267,6 +1272,8 @@ input.error {
   font-weight: bolder;
   font-size: 1vw;
   cursor: pointer;
+  width: 50%;
+  margin-left: 26%;
 }
 
 
