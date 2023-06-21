@@ -7,6 +7,7 @@ import { usePracticesContext } from '../hooks/usePracticesContext'
 import { useCounterContext } from "../hooks/useCounterContext"
 import { BsTrash } from 'react-icons/bs'
 import { FiEdit } from 'react-icons/fi'
+import PracticeContent from './PracticeContent'
 
 
 function PracticeDetails({current}) { 
@@ -61,7 +62,7 @@ function PracticeDetails({current}) {
                 <div className='prac-right'><h2>Date:</h2><span>{format(new Date(current.createdAt),'MMM d , yyyy')}</span></div>
             </div>
             <div className='practice3'>
-                <p>{current.description}</p>
+                <p className='para-para'><PracticeContent data={current.description}/></p>
             </div>
             <div className='days-ago'>
                 {formatDistanceToNow(new Date(current.createdAt),{addSuffix:true})}
