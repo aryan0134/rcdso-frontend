@@ -24,8 +24,7 @@ function Contact() {
               <div className='down-heading'>My Address</div>
               <div className='down-info'>
                 <ul>
-                  <li><FaMapMarkerAlt /><span>Sector-5 MDC, Panchkula, India</span></li>
-                  <li><FaMobileAlt /><span>+91 9872629802</span></li>
+                  <li><FaMapMarkerAlt /><span>Mumbai, India</span></li>
                   <li><FaEnvelope /><span>citadelindiatech@gmail.com</span></li>
                 </ul>
               </div>
