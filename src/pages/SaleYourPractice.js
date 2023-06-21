@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { v4 as uuidv4 } from 'uuid';
 import { useAuthContext } from '../hooks/useAuthContext'
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
+import PracticeContent from '../components/PracticeContent';
 const {format} = require('date-fns');
 
 
@@ -74,7 +75,7 @@ const drop = (id)=>{
           {dropDown==current._id ? 
             <div className='drop-down-details'>
               <div className='drop1'>{current.phoneNo && <><h1>Contact:</h1> <span>{current.phoneNo}</span></>}</div>
-              <div className='drop2'>{current.description}</div>
+              <div className='drop2'><PracticeContent data={current.description} /></div>
               <div className='drop1'>{current.address && <><h1>Address:</h1>  <span>{current.address}</span></>}</div>
               <div className='drop1'>{current.email && <><h1>Email:</h1>  <span>{current.email}</span></>}</div>
               <div className='drop1'>{current.website && <><h1>Website:</h1>  <span>{current.website}</span></> }</div>
