@@ -20,13 +20,7 @@ function Blogs() {
     }
   }
   const navigateToView = () => {
-    if(user){
-      history('/viewblogs')
-    }
-    else{
-      history('/login')
-    }
-    
+      history('/viewblogs')    
   }
 
   return (
