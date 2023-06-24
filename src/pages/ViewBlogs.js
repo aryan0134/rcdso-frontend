@@ -13,9 +13,7 @@ function ViewBlogs() {
 
     useEffect(() => {
         const fetchBlogs = async () => {
-        const response = await fetch('https://rcdso-backend.onrender.com/api/allblogs' , {
-            headers: {'Authorization': `Bearer ${user.token}`}
-        })
+        const response = await fetch('https://rcdso-backend.onrender.com/api/allblogs')
         const json = await response.json()
 
         if(response.ok){
@@ -23,11 +21,10 @@ function ViewBlogs() {
         }
         }
         
-        if(user){
         fetchBlogs()
-        }
         
-    },[dispatch , user])
+        
+    },[dispatch])
 
 
     return (
