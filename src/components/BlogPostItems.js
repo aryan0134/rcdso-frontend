@@ -31,7 +31,7 @@ function BlogPostItems({ postId,current }) {
     if(!user) {
       navigate("/login")
     }
-    axios.post('https://rcdso-backend.onrender.com/api/comments', { text, author, post: postId})
+    axios.post('https://rcdso-backend.onrender.com/api/commentspost', { text, author, post: postId})
       .then((response) => {
         setComments([...comments, response.data]);
       })
