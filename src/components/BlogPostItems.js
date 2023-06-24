@@ -5,10 +5,12 @@ import { ImQuotesRight } from 'react-icons/im'
 import CommentList from './CommentList';
 import CommentForm from './CommentForm';
 import { useAuthContext } from '../hooks/useAuthContext'
+import { useNavigate } from 'react-router-dom';
 
 function BlogPostItems({ postId,current }) {
   const [comments, setComments] = useState([]);
   const { user } = useAuthContext()
+  let navigate = useNavigate()
 
   useEffect(() => {
     fetchComments();
@@ -26,6 +28,9 @@ function BlogPostItems({ postId,current }) {
   };
 
   const addComment = (text, author) => {
+    if(!user) {
+      navigate("/login")
+    }
     axios.post('https://rcdso-backend.onrender.com/api/comments', { text, author, post: postId})
       .then((response) => {
         setComments([...comments, response.data]);
