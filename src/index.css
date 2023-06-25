@@ -1936,6 +1936,7 @@ input.error {
 }
 .myblogs-card{
   /* height: 70%; */
+  min-height: 70%;
   width: 90%;
   background-color: #081012;
   margin-top: 20px;
@@ -1946,6 +1947,9 @@ input.error {
   /* position: relative; */
   flex-grow: 1;
   height: 80vh;
+}
+.poi-poi{
+  height: 60% !important;
 }
 .myblogs-title{
   height: 16%;
@@ -1982,13 +1986,15 @@ input.error {
   align-items: center;
   position: relative;
 }
-.myblogs-content p{
+.equalizing{
   /* border: 1px solid silver; */
   height: 90%;
-  width: 94%;
-  display: flex;
+  width: 92%;
+  text-align: center;
+/*   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  overflow-y: scroll;
 }
 .icon-quotes{
   position: absolute;
@@ -2024,12 +2030,12 @@ input.error {
 }
 /* comment Section */
 .card-flexing{
-  height: 80vh;
+  height: 100%;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-bottom: 100px;
 }
 .comments-flexing{
   width: 90%;
@@ -2038,9 +2044,9 @@ input.error {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  height: 40vh;
-  margin-bottom: 10px;
+/*   flex-grow: 1; */
+  height: 40%;
+/*   margin-bottom: 10px; */
 }
 .comments-flexing form{
   display: flex;
