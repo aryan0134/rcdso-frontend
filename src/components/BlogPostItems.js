@@ -6,6 +6,7 @@ import CommentList from './CommentList';
 import CommentForm from './CommentForm';
 import { useAuthContext } from '../hooks/useAuthContext'
 import { useNavigate } from 'react-router-dom';
+import PracticeContent from '../components/PracticeContent';
 
 function BlogPostItems({ postId,current }) {
   const [comments, setComments] = useState([]);
@@ -49,7 +50,7 @@ function BlogPostItems({ postId,current }) {
         </div>
         <div className='myblogs-content'>
           <div className='icon-quotes'><ImQuotesLeft /></div>
-          <p>{current.content}</p>
+          <p className='equalizing'><PracticeContent data={current.content} /></p>
           <div className='right-bottom'><ImQuotesRight /></div>
         </div>
       </div>
