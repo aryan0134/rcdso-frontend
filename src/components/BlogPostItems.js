@@ -43,7 +43,7 @@ function BlogPostItems({ postId,current }) {
 
   return (
     <div className='card-flexing'>
-      <div className='myblogs-card' key={current._id}>
+      <div className='myblogs-card poi-poi' key={current._id}>
         <div className='myblogs-title'>
           <h1>{current.title}</h1>
           <h2>By {current.postedBy}</h2> 
