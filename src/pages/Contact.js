@@ -25,7 +25,7 @@ function Contact() {
               <div className='down-info'>
                 <ul>
                   <li><FaMapMarkerAlt /><span>Mumbai, India</span></li>
-                  <li><FaEnvelope /><span>citadelindiatech@gmail.com</span></li>
+                  <li><FaEnvelope /><span>rcdso.in@gmail.com</span></li>
                 </ul>
               </div>
             </div>
