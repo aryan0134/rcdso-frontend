@@ -80,6 +80,9 @@ function Navbar() {
                 <Link smooth to='/blogs' style={{ textDecoration: 'none', color: 'black'}} >
                   <li>Blogs</li>
                 </Link>
+                <Link smooth to='/blogs' style={{ textDecoration: 'none', color: 'black'}} >
+                  <li>Contact Us</li>
+                </Link>
             </ul>
         </div>
     </header>
