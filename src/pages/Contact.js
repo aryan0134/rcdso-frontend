@@ -25,6 +25,7 @@ function Contact() {
               <div className='down-info'>
                 <ul>
                   <li><FaMapMarkerAlt /><span>Mumbai, India</span></li>
+                  <li><FaMobileAlt /><span>+1 (332) 455-0280</span></li>
                   <li><FaEnvelope /><span>rcdso.in@gmail.com</span></li>
                 </ul>
               </div>
