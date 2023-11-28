@@ -28,7 +28,7 @@ function BlogPostItems({ postId,current }) {
       });
   };
 
-  const addComment = (text, author) => {
+  const addComment = (text, author, postc) => {
     if(!user) {
       navigate("/login")
     }
@@ -56,7 +56,7 @@ function BlogPostItems({ postId,current }) {
       </div>
       <div className='comments-flexing'>
         <CommentList comments={comments} />
-        <CommentForm addComment={addComment} />
+        <CommentForm addComment={addComment} postId={postId} />
       </div>
     </div>
   );
