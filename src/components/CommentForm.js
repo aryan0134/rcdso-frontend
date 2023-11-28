@@ -13,7 +13,7 @@ function CommentForm({ addComment , postId }) {
     if(!user){
       navigate('/login')
     }
-    addComment(text, `${user.user.firstName} ${user.user.lastName}`, postc: postId);
+    addComment(text, `${user.user.firstName} ${user.user.lastName}`, postId);
     setText('');
   };
 
