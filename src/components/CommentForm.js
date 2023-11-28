@@ -3,7 +3,7 @@ import { useAuthContext } from '../hooks/useAuthContext'
 import { AiOutlineSend } from 'react-icons/ai'
 import {useNavigate} from 'react-router-dom'
 
-function CommentForm({ addComment }) {
+function CommentForm({ addComment , postId }) {
   const [text, setText] = useState('');
   const { user } = useAuthContext()
   let navigate = useNavigate()
@@ -13,7 +13,7 @@ function CommentForm({ addComment }) {
     if(!user){
       navigate('/login')
     }
-    addComment(text, `${user.user.firstName} ${user.user.lastName}`);
+    addComment(text, `${user.user.firstName} ${user.user.lastName}`, postId);
     setText('');
   };
 
